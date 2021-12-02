@@ -1,0 +1,1 @@
+clear; close all;Fs = 192000;Fs = 44100;T = 5;nsamples = Fs*T;out = pa_wavrecord(1, 1, nsamples, Fs, 0, 'asio');filename = 'data.wav';audiowrite(filename, out, Fs)
